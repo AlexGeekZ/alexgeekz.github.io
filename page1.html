@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Alex Geek</title>
+<meta name="description" content="Alex Geek
+Alejandro Zepeda Alvarez">
+<meta name="keywords" content="Alex Geek
+Alejandro Zepeda Alvarez">
+<meta name="author" content="Alex Geek">
+<meta name="generator" content="Alex Geek">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Alex Geek.ico" rel="shortcut icon" type="image/x-icon">
+<link href="Head-Blue.png" rel="icon" sizes="669x564" type="image/png">
+<link href="Head-Blue.png" rel="icon" sizes="669x564" type="image/png">
+<link href="Head and Text.png" rel="apple-touch-icon" sizes="1644x424">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+<link href="Alex_Resumé.css" rel="stylesheet">
+<link href="page1.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.parallax.min.js"></script>
+<script src="wb.newsviewer.min.js"></script>
+<script src="wb.slideshow.min.js"></script>
+<script src="wwb15.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      function onScrollBookmark2()
+      {
+         var $obj = $("#wb_Bookmark2");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+         {
+            $obj.addClass("in-viewport");
+            ShowObjectWithEffect('Apps', 1, 'bounce', 3000);
+         }
+      }
+      onScrollBookmark2();
+      $(window).scroll(function(event)
+      {
+         onScrollBookmark2();
+      });
+      $("a[href*='#LayoutGrid1']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 1600, 'linear');
+      });
+      $('#wb_LayoutGrid1').parallax();
+      $("#wb_ResponsiveMenu ul li a").click(function(event)
+      {
+         $("#wb_ResponsiveMenu input").prop("checked", false);
+      });
+      function onScrollBookmark1()
+      {
+         var $obj = $("#wb_Bookmark1");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+         {
+            $obj.addClass("in-viewport");
+            ShowObjectWithEffect('wb_ResponsiveMenu', 1, 'fade', 1500);
+            ShowObjectWithEffect('wb_Alex_Geek', 1, 'fade', 1500, 'easeInSine');
+            ShowObjectWithEffect('wb_Text1', 1, 'bounce', 1500);
+            ShowObjectWithEffect('wb_Text2', 1, 'slideleft', 1500);
+         }
+         else
+         if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+         {
+            $obj.removeClass("in-viewport");
+            ShowObjectWithEffect('wb_ResponsiveMenu', 0, 'fade', 1500);
+            ShowObjectWithEffect('wb_Text2', 0, 'slideleft', 2000);
+         }
+      }
+      if (!$('#wb_Bookmark1').inViewPort(true))
+      {
+         $('#wb_Bookmark1').addClass("in-viewport");
+      }
+      onScrollBookmark1();
+      $(window).scroll(function(event)
+      {
+         onScrollBookmark1();
+      });
+      $("a[href*='#LayoutGrid2']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 1000, 'linear');
+      });
+      var Marquesina_Data = new Array();
+      Marquesina_Data[0] = ["http://", "Software Engineering", "", "Official certifications in Platzi, Microsoft and Certiport"];
+      Marquesina_Data[1] = ["http://", "Technical Support", "", "Help Desk, Software, Hardware and Internet Networks<br>Official certifications in IC3 and Microsoft"];
+      Marquesina_Data[2] = ["http://", "DataBases", "", "SQL, MySQL, PostgreSQL, MongoDB, GCP, AWS, SQL Azure, and Firebase"];
+      Marquesina_Data[3] = ["http://", "Development and Programming", "", "HTML, Java Script, PHP, CSS, Java C#, .Net and Python<br>"];
+      Marquesina_Data[4] = ["http://", "Computing", "", "Official certifications in Microsoft IC3 and Certiport<br>Office, Windows and Windows Server"];
+      Marquesina_Data[5] = ["http://", "Servers", "", "Ubuntu Servers, Terminal and command line, Regular expressions and Windows Server"];
+      $("#Marquesina").newsviewer({ mode: 'rotate', pause: 4000, pause: 4000, animation: 4, animationDuration: 500, sortOrder: 0, dataSource: 'local', param: Marquesina_Data, target: '_self', includeDate: false, maxItems: 10});
+      $("#Apps").slideshow(
+      {
+         interval: 1000,
+         type: 'random',
+         effect: 'none',
+         direction: '',
+         pagination: false,
+         fullscreen: 0,
+         maxWidth: 1920,
+         effectlength: 2000
+      });
+      $("a[href*='#LayoutGrid3']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 1000, 'linear');
+      });
+      $('#wb_LayoutGrid3').parallax();
+      $("#skillsProgressbar1").progressbar(
+      {
+         value: 90
+      });
+      $("#skillsProgressbar3").progressbar(
+      {
+         value: 70
+      });
+      $("#skillsProgressbar4").progressbar(
+      {
+         value: 70
+      });
+      $("#Progressbar1").progressbar(
+      {
+         value: 90
+      });
+      $("a[href*='#LayoutGrid4']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top }, 1000, 'linear');
+      });
+   function countUpfactsJavaScript3()
+   {
+      var $obj = $('#factsJavaScript3');
+      var count = $obj.attr('data-count');
+      var bottomObj = $obj.offset().top + $obj.outerHeight();
+      var bottomWnd = $(window).scrollTop() + $(window).height();
+      if (bottomWnd > bottomObj && count != 0)
+      {
+         $({countUp: $obj.text()}).animate({countUp: count},
+         {
+            duration: 3000,
+            step: function() { $obj.text(Math.floor(this.countUp)); },
+            complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+         });  
+      }
+   }
+   $(window).scroll( function()
+   {
+      countUpfactsJavaScript3();
+   });
+   countUpfactsJavaScript3();
+      function onScrollBookmark3()
+      {
+         var $obj = $("#wb_Bookmark3");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+         {
+            $obj.addClass("in-viewport");
+            ShowObjectWithEffect('wb_Text9', 1, 'slideleft', 1800, 'easeInCubic');
+            ShowObjectWithEffect('wb_FontAw_Hand', 1, 'clipvertical', 2000, 'swing');
+            ShowObjectWithEffect('wb_FontAw_Youtube', 1, 'slideup', 2500, 'easeInBounce');
+         }
+      }
+      onScrollBookmark3();
+      $(window).scroll(function(event)
+      {
+         onScrollBookmark3();
+      });
+      $("a[href*='#Bookmark4']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark4').offset().top }, 600, 'linear');
+      });
+      function onScrollBookmark4()
+      {
+         var $obj = $("#wb_Bookmark4");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+         {
+            $obj.addClass("in-viewport");
+            ShowObjectWithEffect('wb_Youtube2', 1, 'fade', 2000, 'swing');
+            ShowObjectWithEffect('wb_Instagram_2', 1, 'fade', 2000);
+            ShowObjectWithEffect('wb_Twitter_2', 1, 'fade', 2000, 'swing');
+            ShowObjectWithEffect('wb_Whatsapp_2', 1, 'fade', 2000, 'swing');
+            ShowObjectWithEffect('wb_Github_2', 1, 'fade', 2000, 'swing');
+            ShowObjectWithEffect('wb_Certiport_2', 1, 'fade', 2000, 'swing');
+            ShowObjectWithEffect('wb_Platzi_2', 1, 'fade', 2000, 'swing');
+            ShowObjectWithEffect('wb_LinkedIn_2', 1, 'fade', 2000, 'swing');
+            ShowObjectWithEffect('wb_Facebook_2', 1, 'fade', 2000, 'swing');
+         }
+      }
+      onScrollBookmark4();
+      $(window).scroll(function(event)
+      {
+         onScrollBookmark4();
+      });
+   });
+</script>
+<script>   
+   $(document).ready(function()
+   {
+      var $progressbars = $('.ui-progressbar');
+      
+      $progressbars.each(function() 
+      {
+        var $obj = $(this);
+        $obj.data('value', $obj.progressbar('option', 'value'));
+        $obj.data('done', false);
+        $obj.progressbar('option', 'value', 0);
+      });
+      $(window).bind('scroll', function() 
+      {
+         $progressbars.each(function() 
+         {
+            var $obj = $(this);
+            if (!$obj.data('done') && $(window).scrollTop() + $(window).height() >= $obj.offset().top) 
+            {
+               $obj.data('done', true);
+               $obj.animate({scroll: 1}, 
+               { 
+                  duration: 3000, 
+                  step: function(now) 
+                  {
+                     var $obj = $(this);
+                     var val = Math.round($obj.data('value') * now);
+                     $obj.progressbar('option', 'value', val);
+                  }
+               });
+            }
+         });
+      }).triggerHandler('scroll');
+   });
+</script>
+</head>
+<body>
+   <div id="wb_Bookmark2">
+      <a id="Bookmark2">&nbsp;</a>
+   </div>
+   <div id="wb_Bookmark1">
+      <a id="Bookmark1">&nbsp;</a>
+   </div>
+   <div id="wb_Bookmark3">
+      <a id="Bookmark3">&nbsp;</a>
+   </div>
+   <div id="wb_Bookmark4">
+      <a id="Bookmark4">&nbsp;</a>
+   </div>
+   <div id="wb_Encabezado">
+      <div id="Encabezado">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Image2">
+                  <img src="images/Face Alex Geek - Square.png" id="Image2" alt="">
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_ResponsiveMenu">
+                  <label class="toggle" for="ResponsiveMenu-submenu" id="ResponsiveMenu-title">Menu<span id="ResponsiveMenu-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+                  <input type="checkbox" id="ResponsiveMenu-submenu">
+                  <ul class="ResponsiveMenu" id="ResponsiveMenu" role="menu">
+                     <li><a role="menuitem" href="./index.html">Home</a></li>
+                     <li><a role="menuitem" href="./Certifications.html">Certifications</a></li>
+                     <li><a role="menuitem" href="./gallery.html">Gallery</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-3">
+               <div id="wb_FontAwesomeIcon6">
+                  <a href="https://www.facebook.com/AlexZGeek/" target="_blank"><div id="FontAwesomeIcon6"><i class="fa fa-facebook"></i></div></a>
+               </div>
+               <div id="wb_FontAwesomeIcon8">
+                  <a href="https://www.linkedin.com/in/alexzepeda/" target="_blank"><div id="FontAwesomeIcon8"><i class="fa fa-linkedin-square"></i></div></a>
+               </div>
+               <div id="wb_FontAwesomeIcon13">
+                  <a href="https://platzi.com/@alexgeek/" target="_blank"><div id="FontAwesomeIcon13"><i class="fa fa-product-hunt"></i></div></a>
+               </div>
+               <div id="wb_FontAwesomeIcon14">
+                  <a href="http://www.certiport.com/Portal/Pages/ViewTranscript.aspx?uid=GbQ6aumPePIpficZgN6crQ==&vid=cW/IeHNQoJ30i3/7bakVVQ==&aid=OvqpbQa4lDfCgWbKvFZC9g==&defaultlang=ESM" target="_blank"><div id="FontAwesomeIcon14"><i class="fa fa-contao"></i></div></a>
+               </div>
+               <div id="wb_FontAwesomeIcon7">
+                  <a href="https://github.com/AlexGeekZ" target="_blank"><div id="FontAwesomeIcon7"><i class="fa fa-github"></i></div></a>
+               </div>
+               <div id="wb_FontAwesomeIcon9">
+                  <div id="FontAwesomeIcon9"><i class="fa fa-whatsapp"></i></div>
+               </div>
+               <div id="wb_FontAwesomeIcon10">
+                  <a href="https://twitter.com/alexpopdj" target="_blank"><div id="FontAwesomeIcon10"><i class="fa fa-twitter"></i></div></a>
+               </div>
+               <div id="wb_FontAwesomeIcon11">
+                  <a href="https://www.instagram.com/alexpopgeek/" target="_blank"><div id="FontAwesomeIcon11"><i class="fa fa-instagram"></i></div></a>
+               </div>
+               <div id="wb_FontAwesomeIcon12">
+                  <a href="https://www.youtube.com/c/AlexGeekCursos?sub_confirmation=1" target="_blank"><div id="FontAwesomeIcon12"><i class="fa fa-youtube-square"></i></div></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid1">
+      <div id="LayoutGrid1-overlay"></div>
+      <div id="LayoutGrid1">
+         <div class="col-1">
+            <div id="wb_Text1">
+               <span style="color:#8000FF;font-family:'Covered By Your Grace';font-size:107px;"><strong>Alex Geek</strong></span>
+            </div>
+            <div id="wb_Text2">
+               <span style="color:#8000FF;font-family:'Covered By Your Grace';font-size:43px;"><strong>About Me<br></strong>Hi! my name is Alejandro Zepeda Alvarez, I am an engineer in computer systems, I have tried to always stay at the forefront of new technologies throughout my career, through courses and certifications and of course putting it into practice, I like to be proactive and I consider myself self-taught definitely.</span>
+            </div>
+         </div>
+         <div class="col-2">
+            <picture id="wb_Alex_Geek">
+               <img src="images/Alex .png" id="Alex_Geek" alt="">
+            </picture>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid2">
+      <div id="LayoutGrid2-overlay"></div>
+      <div id="LayoutGrid2">
+         <div class="row">
+            <div class="col-1">
+               <div id="Marquesina">
+               </div>
+               <ul id="Apps">
+                  <li><img class="image" src="images/python.png" alt="" title=""></li>
+                  <li><img class="image" src="images/ubuntu_new.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/ruby.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/mongo_db.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/javascript_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/html5_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/git_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/linux.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/mysql_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/node_js_neu.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/java_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/c_sharp_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/css_logo_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/blender.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/after_effects_cs6.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/android_studio_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/angular_js.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/bootstrap_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/cinema4d.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/dreamweaver_cs6.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/evernote1.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/vba_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/sql_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/jquery.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/json_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/linkedin_128.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/php1.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/ruby_rails.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/sql_server.png" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/unity4_128.png" style="display:none;" alt="" title=""></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid3">
+      <div id="LayoutGrid3-overlay"></div>
+      <div id="LayoutGrid3">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_Text5">
+                     <span style="color:#FFFFFF;font-family:'Covered By Your Grace';font-size:107px;"><strong>Skills</strong></span>
+                  </div>
+                  <div id="wb_Text7">
+                     <span style="color:#FFFFFF;font-family:'Covered By Your Grace';font-size:48px;"><strong>Technical Support</strong></span>
+                  </div>
+                  <div id="skillsProgressbar1">
+                  </div>
+                  <div id="wb_Text4">
+                     <span style="color:#FFFFFF;font-family:'Covered By Your Grace';font-size:48px;"><strong>Developing</strong></span>
+                  </div>
+                  <div id="skillsProgressbar3">
+                  </div>
+                  <div id="wb_Text6">
+                     <span style="color:#FFFFFF;font-family:'Covered By Your Grace';font-size:48px;"><strong>Machine Learning</strong></span>
+                  </div>
+                  <div id="skillsProgressbar4">
+                  </div>
+                  <div id="wb_Text3">
+                     <span style="color:#FFFFFF;font-family:'Covered By Your Grace';font-size:48px;"><strong>DataBases</strong></span>
+                  </div>
+                  <div id="Progressbar1">
+                  </div>
+               </div>
+            </div>
+            <div class="col-2">
+               <div class="col-2-padding">
+                  <div id="wb_factsHeading3">
+                     <h2 id="factsHeading3">Awards</h2>
+                  </div>
+                  <div id="wb_factsJavaScript3">
+                     <div data-count="44" id="factsJavaScript3"></div>
+                  </div>
+                  <div id="wb_Text8">
+                     <span style="color:#FFFFFF;font-family:'Covered By Your Grace';font-size:85px;"><strong><a href="./Certifications.html" class="Alex_Resumé">Check Certifications</a></strong></span>
+                  </div>
+                  <div id="wb_factsIcon3">
+                     <a href="./tablet.html"><div id="factsIcon3"><i class="fa fa-diamond"></i></div></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid4">
+      <div id="LayoutGrid4-overlay"></div>
+      <div id="LayoutGrid4">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Text9">
+                  <span style="color:#FFFFFF;font-family:'Covered By Your Grace';font-size:85px;"><strong>Follow me in my YouTube Channel</strong></span>
+               </div>
+               <div id="wb_FontAw_Hand">
+                  <div id="FontAw_Hand"><i class="fa fa-hand-o-down"></i></div>
+               </div>
+               <div id="wb_FontAw_Youtube">
+                  <a href="https://www.youtube.com/c/AlexGeekCursos?sub_confirmation=1" target="_blank"><div id="FontAw_Youtube"><i class="fa fa-youtube-play"></i></div></a>
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_Image1">
+                  <img src="images/Alex 3.png" id="Image1" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid5">
+      <div id="LayoutGrid5">
+         <div class="col-1">
+            <div id="wb_Text10">
+               <span style="color:#8000FF;font-family:'Covered By Your Grace';font-size:29px;"><strong>Web Design by Alex Geek 2020 &#0169; </strong></span>
+            </div>
+         </div>
+         <div class="col-2">
+            <div class="col-2-padding">
+               <div id="wb_Youtube2">
+                  <a href="https://www.youtube.com/c/AlexGeekCursos?sub_confirmation=1" target="_blank"><div id="Youtube2"><i class="fa fa-youtube-square"></i></div></a>
+               </div>
+               <div id="wb_Instagram_2">
+                  <a href="https://www.instagram.com/alexpopgeek/" target="_blank"><div id="Instagram_2"><i class="fa fa-instagram"></i></div></a>
+               </div>
+               <div id="wb_Twitter_2">
+                  <a href="https://twitter.com/alexpopdj" target="_blank"><div id="Twitter_2"><i class="fa fa-twitter"></i></div></a>
+               </div>
+               <div id="wb_Whatsapp_2">
+                  <div id="Whatsapp_2"><i class="fa fa-whatsapp"></i></div>
+               </div>
+               <div id="wb_Github_2">
+                  <a href="https://github.com/AlexGeekZ" target="_blank"><div id="Github_2"><i class="fa fa-github"></i></div></a>
+               </div>
+               <div id="wb_Certiport_2">
+                  <a href="http://www.certiport.com/Portal/Pages/ViewTranscript.aspx?uid=GbQ6aumPePIpficZgN6crQ==&vid=cW/IeHNQoJ30i3/7bakVVQ==&aid=OvqpbQa4lDfCgWbKvFZC9g==&defaultlang=ESM" target="_blank"><div id="Certiport_2"><i class="fa fa-contao"></i></div></a>
+               </div>
+               <div id="wb_Platzi_2">
+                  <a href="https://platzi.com/@alexgeek/" target="_blank"><div id="Platzi_2"><i class="fa fa-product-hunt"></i></div></a>
+               </div>
+               <div id="wb_LinkedIn_2">
+                  <a href="https://www.linkedin.com/in/alexzepeda/" target="_blank"><div id="LinkedIn_2"><i class="fa fa-linkedin-square"></i></div></a>
+               </div>
+               <div id="wb_Facebook_2">
+                  <a href="https://www.facebook.com/AlexZGeek/" target="_blank"><div id="Facebook_2"><i class="fa fa-facebook"></i></div></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div style="z-index:48">
+      <script>      
+      var isMobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+      if (isMobile)
+      {
+         location.replace("./index_movil.html");
+      }  
+      </script>  </div>
+</body>
+</html>
