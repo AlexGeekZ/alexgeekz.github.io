@@ -374,15 +374,20 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .header{
+
+    .body {
+        background-color: #AB88FF;
+    }
+
+    .header {
         height: 70px;
     }
 
     .footer {
         align-items: flex-start;
         flex-direction: column;
-        justify-content: center;
-        height: 70px;
+        justify-content: flex-start;
+        height: 200px;
     }
 
     .login {
