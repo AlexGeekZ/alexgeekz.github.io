@@ -387,7 +387,7 @@ body {
         align-items: flex-start;
         flex-direction: column;
         justify-content: flex-start;
-        height: 200px;
+        height: 150px;
     }
 
     .login {
