@@ -1,0 +1,210 @@
+
+/*Fuente icono menu */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?kip25g');
+    src:  url('../fonts/icomoon.eot?kip25g#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?kip25g') format('truetype'),
+      url('../fonts/icomoon.woff?kip25g') format('woff'),
+      url('../fonts/icomoon.svg?kip25g#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+
+ /* Termina stilo para fuente icono*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.7) 100%), url(../assets/img/banner3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Efecto Parallax*/
+}
+
+.header-container {
+    background: rgba(24, 56, 231, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100vw;
+}
+
+.icon-menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 6;
+    left: 7px;
+    top: 7px;
+    color: white;
+    font-size: 30px;
+}
+
+.header-container::-webkit-scrollbar {
+    background-color: #1089ff;
+}
+
+.header-container-logo {    
+    cursor: pointer;
+    width: 150px;
+}
+
+.header-container-menu {
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.header-container-menu a {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.logo-menu {
+    width: 150px;
+    display: none;
+}
+
+.hero-container {    
+    height: 100vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 200px;
+    margin-right: 200px;    
+}
+
+.hero-container-title {
+    grid-column: 1 / 2;
+    letter-spacing: 3px;
+    font-size: 66px;
+    font-weight: bold;
+    margin-bottom: 0;
+    align-self: center;
+    justify-self: center;
+}
+
+.hero-container-description {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 25px;
+    grid-column: 1 / 2;
+    font-size: 26px;
+    text-align: justify;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: flex-start;
+}
+
+.hero-container-search {
+    background-color: white;
+    grid-column: 1 / 2;
+    border-radius: 25px;
+    height: 50px;
+    justify-self: center;
+    margin-top: 30px;
+    width: auto;
+}
+
+.hero-container-search img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.hero-container-search input {
+    margin-right: 5px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+}
+
+.hero-container-search button {
+    background-color: #1089ff;
+    width: auto;
+    height: 100%;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-container-search button:hover {
+    background-color: #1838e7;
+}
+
+.hero-container-video {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin-top: 130px;
+}
+
+.hero-container-video video {
+    border-radius: 50px;
+}
+
+.hero-container-apps {
+    grid-column: 2 / 3;
+    width: auto;
+    align-self: flex-start;
+    justify-self: center;
+    padding: 30px;    
+}
+
+
+.hero-container-apps img {    
+    width: auto;
+    height: auto;
+    margin-right: 25px;
+    padding: 0px 10px;
+    cursor: pointer;    
+}
+
