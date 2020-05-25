@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600&display=swap" rel="stylesheet"> 
     <title>Janz</title>
 </head>
+
 <body>
     
     <header class="header">
+       
         <i class="icon-menu" id="burger-menu"></i>
         <section class="header-container">
             <img class="header-container-logo" src="assets/img/Logo-Janz (3) white.png" alt="Logo-Janz">
@@ -23,50 +26,46 @@
                 <a href="#">Conviértete en Profesor</a>
             </nav>
         </section>
+
     </header>
 
     <main>
         <section class="main">
-
-            <div class="hero-container">
-
-                <h1 class="hero-container-title">
-                    Aprende lo que quieras!
-                </h1>
-                <p class="hero-container-description">
-                    Con Janz aprende desde tu casa, te ofrecemos asesorias con maestros certificados y profesionales en la materia, puedes aprender cualquier materia desde nivel Preescolar hasta Doctorado, en Janz puedes seleccionar un tema en especifico y seguro estara un asesor disponible para ayudarte a comprenderlo mejor, o si lo prefieres puedes agendar tu asesoria.
-                </p>
-                <div class="hero-container-search">
-                    <img src="assets/img/magnifying glass.png" alt="lupa">
-                    <input type="text" placeholder="Quiero aprender...">
-                    <button>Reserva una prueba gratuita!</button>
-                </div>
-            
-                <div class="hero-container-video">
-                    <video muted="" playsinline="" autoplay loop src="assets/video/gift.mp4"></video>
-                </div>
-            
-                <div class="hero-container-apps">
-                    <img src="assets/img/app-store.png" alt="AppStore">
+            <section class="main-container">
+                <div class="main-container-hero">
+                    <div class="item text">
+                        <h1 class="hero-container-title">
+                            Aprende lo que quieras!
+                        </h1>
+                        <p class="hero-container-description">
+                            Con Janz aprende desde tu casa, te ofrecemos asesorias con maestros certificados y profesionales en la materia, puedes aprender cualquier materia desde nivel Preescolar hasta Doctorado, en Janz puedes seleccionar un tema en especifico y seguro estara un asesor disponible para ayudarte a comprenderlo mejor, o si lo prefieres puedes agendar tu asesoria.
+                        </p>
+                    </div>
+                    <div class="item search">
+                        <img src="assets/img/magnifying glass.png" alt="lupa">
+                        <input type="text" placeholder="Quiero aprender...">
+                        <button>Reserva una prueba gratuita!</button>
+                    </div>
+                    <div class="item video">
+                        <video muted="" playsinline="" autoplay loop src="assets/video/gift.mp4"></video>
+                    </div>
+                    <div class="item apps">
+                        <img src="assets/img/app-store.png" alt="AppStore">
                     <img src="assets/img/google-play.png" alt="GooglePlay">
+                    </div>
                 </div>
-
-            </div>
-
+            </section>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
 
     </footer>
 
     <script>
-
         const menu = document.querySelector('.header-container-menu');
-            console.log (menu);
+
         const burgerButton = document.querySelector('#burger-menu');
-            console.log (burgerButton);
-        burgerButton.addEventListener('click', showHide)
 
         function showHide() {
                 if(menu.classList.contains('is-active')){
@@ -75,8 +74,10 @@
                     menu.classList.add('is-active');
                 }      
             }
-
+            
+        burgerButton.addEventListener('click', showHide)
     </script>
 
 </body>
+
 </html>
