@@ -116,9 +116,9 @@ body {
     width: 100%;
 }
 
-.item {
+/* .item {
     border: 1px solid white;
-}
+} */
 
 .text {
     grid-column: 1 / 2;
