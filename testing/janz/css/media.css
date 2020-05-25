@@ -148,7 +148,17 @@
         }        
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 420px) {
+
+        .search button {
+            font-size: 12px;
+        }
+
+        .search input {
+            font-size: 12px;
+        }
+
+    }
         
 
     @media screen and (max-width: 320px) {
