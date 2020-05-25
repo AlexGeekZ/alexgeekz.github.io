@@ -117,7 +117,7 @@ body {
 }
 
 .item {
-    border: 0px;
+    border: 1px solid white;
 }
 
 .text {

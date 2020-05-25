@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-
+    
     .main-container-hero {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 33% 33% 33%;
@@ -56,99 +56,96 @@
         align-self: center;
         justify-self: center;
     }
+}
+@media screen and (max-width: 768px) {  
+    .icon-menu {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.5);
+    }
+            
+    .header-container-menu {
+        position: fixed;
+        display: flex;
+        height: 100vh;
+        width: 50vw;
+        margin: auto;
+        top: 0;
+        left: 0vw;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+        transition: .3s;
+    }
     
-    @media screen and (max-width: 768px) {
-        
-        .icon-menu {
-            display: block;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 3;
-            cursor: pointer;
-            background: rgba(0, 0, 0, 0.5);
-        }
-                
-        .header-container-menu {
-            position: fixed;
-            display: flex;
-            height: 100vh;
-            width: 50vw;
-            margin: auto;
-            top: 0;
-            left: 0vw;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 2;
-            transition: .3s;
-        }
-        
-        .header-container-menu.is-active {
-            left: -50vw;
-        }
-        
-        .header-container-menu a {
-            font-size: 28px;
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
+    .header-container-menu.is-active {
+        left: -50vw;
+    }
     
-        .logo-menu {
-            display: block;
-            margin-top: 100px;
-            margin-bottom: 50px;
-            cursor: pointer;
-            width: 150px;
-            liear
-        }
-    
-        .header-container {
-            display: flex;
-            justify-content:center;
-        }
-    
+    .header-container-menu a {
+        font-size: 28px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
-        .main-container-hero {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 25% 25% 25% 25%;
-        }
-        
-        .text h1 {
-            font-size: 32px;
-        }
-        
-        .text p {
-            font-size: 22px;
-        }
-
-        .video {
-            grid-column: 1 / 3;
-            grid-row: 2 / 3;
-            width: auto;
-            height: 300px;
-        }
-
-        .video video {
-            justify-self: center;
-        }
-
-        .search {
-            grid-column: 1 / 3;
-            grid-row: 3 / 4;
-        }
-
-        .apps {
-            grid-column: 1 / 3;
-            grid-row: 4 / 5;
-            width: auto;
-            margin-top: 30px;
-        }        
+    .logo-menu {
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        width: 150px;        
     }
 
-    @media screen and (max-width: 420px) {
+    .header-container {
+        display: flex;
+        justify-content:center;
+    } 
+
+
+    .main-container-hero {
+        grid-template-columns: 100vw;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+    }
+    
+    .text h1 {
+        font-size: 32px;
+    }
+    
+    .text p {
+        font-size: 16px;
+    }
+
+    .video {
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+        width: auto;
+        height: 500px;
+    }
+
+    .video video {
+        justify-self: center;
+    }
+
+    .search {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .apps {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+        width: auto;
+        margin-top: 30px;
+    }
+}
+
+ @media screen and (max-width: 420px) {
 
         .search button {
             font-size: 12px;
@@ -162,9 +159,10 @@
             margin: 0px 20px;
         }
 
-    }        
+}          
 
-    @media screen and (max-width: 320px) {
+ @media screen and (max-width: 320px) {
+
         .header-container-menu a {
             font-size: 16px;
         }
@@ -188,9 +186,8 @@
         .apps img {
             margin: 0px 20px;
         }
-    }
-
 }
+
 
 
 
