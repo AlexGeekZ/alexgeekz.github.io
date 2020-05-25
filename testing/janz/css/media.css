@@ -158,7 +158,19 @@
             margin: 0px 20px;
         }
 
-}          
+        .video  {
+            transform: scale(0.8);
+        }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .video  {
+        transform: scale(0.6);
+    }
+
+}
 
  @media screen and (max-width: 320px) {
 
@@ -184,6 +196,10 @@
 
         .apps img {
             margin: 0px 20px;
+        }
+
+        .video  {
+            transform: scale(0.5);
         }
 }
 
