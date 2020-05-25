@@ -40,7 +40,7 @@
     }
 
     .video video {
-        transform: scale(0.6);
+        transform: scale(0.75);
     }
 
     .search {
@@ -124,7 +124,8 @@
         grid-column: 1 / 3;
         grid-row: 2 / 4;
         width: auto;
-        height: 500px;
+        height: auto;
+        margin-bottom: 100px;
     }
 
     .video video {
@@ -146,25 +147,30 @@
 
  @media screen and (max-width: 480px) {
 
-        .search button {
-            font-size: 12px;
-        }
+    .search button {
+        font-size: 12px;
+    }
 
-        .search input {
-            font-size: 12px;
-        }
+    .search input {
+        font-size: 12px;
+    }
 
-        .apps img {
-            margin: 0px 20px;
-        }
+    .apps img {
+        margin: 0px 20px;
+    }
 
-        .video  {
-            transform: scale(0.8);
-        }
+    .video  {
+        transform: scale(0.8);
+        margin-bottom: 0;
+    }
+
+    .text p {
+        padding: 0px 15px;
+    }
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
 
     .video  {
         transform: scale(0.6);
@@ -174,33 +180,49 @@
 
  @media screen and (max-width: 320px) {
 
-        .header-container-menu a {
-            font-size: 16px;
-        }
+    .main-container-hero {
+        grid-template-columns: fit-content;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
 
-        .text p {
-            font-size: 14px;
-        }
+    .header-container-menu a {
+        font-size: 16px;
+    }
 
-        .video video {
-            transform: scale(0.4);
-        }
+    .text p {
+        font-size: 14px;
+    }
+    
+    .video  {
+        transform: scale(0.5);
+        grid-row: 2 / 4;
+    }
 
-        .search input {
-            font-size: 12px;
-        }
+    .video video {
+        transform: scale(0.8);
+        margin-top: 50px;
+    }
 
-        .search button {
-            font-size: 12px;
-        }
+    .search {
+        grid-row: 2 / 3;
+    }
 
-        .apps img {
-            margin: 0px 20px;
-        }
+    .search input {
+        font-size: 12px;
+    }
 
-        .video  {
-            transform: scale(0.5);
-        }
+    .search button {
+        font-size: 12px;
+    }
+
+    .apps {
+        grid-row: 3 / 5;
+    }
+
+    .apps img {
+        margin: 0px 20px;
+    }
+
 }
 
 
