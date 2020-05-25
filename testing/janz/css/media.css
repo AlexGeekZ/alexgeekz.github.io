@@ -107,9 +107,8 @@
         justify-content:center;
     } 
 
-
     .main-container-hero {
-        grid-template-columns: 100vw;
+        grid-template-columns: fit-content;
         grid-template-rows: 20% 20% 20% 20% 20%;
     }
     
@@ -145,7 +144,7 @@
     }
 }
 
- @media screen and (max-width: 420px) {
+ @media screen and (max-width: 480px) {
 
         .search button {
             font-size: 12px;
