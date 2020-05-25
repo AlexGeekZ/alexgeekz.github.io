@@ -158,8 +158,11 @@
             font-size: 12px;
         }
 
-    }
-        
+        .apps img {
+            margin: 0px 20px;
+        }
+
+    }        
 
     @media screen and (max-width: 320px) {
         .header-container-menu a {
