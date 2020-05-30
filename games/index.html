@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <title>AlexGeekFred</title>
+</head>
+
+<body>
+
+    <header class="container-level">
+        <input type="text" id='countLevel' placeholder="Nivel:" class='countLevel' readonly="readonly">
+    </header>   
+
+    <div class="gameboard">
+        <div id="celeste" class="color celeste left" data-color="celeste"></div>
+        <div id="violeta" class="color violeta right" data-color="violeta"></div>
+        <div id="naranja" class="color naranja left" data-color="naranja"></div>
+        <div id="verde" class="color verde right" data-color="verde"></div>
+        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Start!</button>
+    </div>
+
+    <section class="title">
+        <div class="title-container">
+            <p>AlexGeekFred</p>
+        </div>
+    </section>
+
+    <footer class="footer">Alex Zepeda 2020</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="/assets/js/game.js"></script>
+</body>
+
+</html>
