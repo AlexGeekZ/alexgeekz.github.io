@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Piedra', cursive;
+  }
+
+  .container-level {
+    width: 300px;
+    height: 100px;  
+    position: absolute;
+    top: calc(50% - 350px);
+    left: calc(50% - 150px);
+    text-align: center;
+    color: white;
+    font-size: 60px;
+  }
+
+  .countLevel {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    outline: none;
+    color: white;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+  .fb-like {
+    position: absolute;
+    top: 500px;
+  }
+
+  .owner {
+    width: 300px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 150px);
+    text-align: center;
+    color: white;
+    font-size: 12px;
+  }
+
+  .title {
+    width: 300px;
+    height: 100px;  
+    position: absolute;
+    top: calc(50% - 350px);
+    left: calc(50% - 160px);
+    text-align: center;
+    color: white;
+    font-size: 60px;
+  }
+
+  .gameboard {
+    height: 100vh;
+    width: 100vh;
+    border-radius: 10%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 60vh;
+    max-width: 60vh;
+  }
+
+  .color {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: left;
+  }
+
+  .celeste {
+    background: #22a6b3;
+  }
+
+  .celeste.light {
+    background: #7ed6df;
+  }
+
+  .violeta {
+    background: #be2edd;
+  }
+
+  .violeta.light {
+    background: #e056fd;
+  }
+
+  .naranja {
+    background: #f0932b;
+  }
+
+  .naranja.light {
+    background: #ffbe76;
+  }
+
+  .verde {
+    background: #6ab04c;
+  }
+
+  .verde.light {
+    background: #badc58;
+  }
+
+  .btn-start {
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 150px);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Piedra', cursive;
+    font-size: 70px;
+  }
+
+  .hide {
+    display: none;
+  }  
