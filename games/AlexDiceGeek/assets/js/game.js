@@ -4,7 +4,7 @@ const naranja = document.getElementById('naranja')
 const verde = document.getElementById('verde')
 const btnEmpezar = document.getElementById('btnEmpezar')
 const countLevel = document.getElementById('countLevel')
-const ULTIMO_nivel = 6
+const ULTIMO_nivel = 15
 
 
 class Juego {
