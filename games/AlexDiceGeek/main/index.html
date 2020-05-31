@@ -6,14 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/main.css">
-
+    <link rel="stylesheet" href="../assets/css/media.css">
     <title>AlexDiceGeek</title>
 </head>
 
 <body>
 
-    <header class="container-level">
-        <input type="text" id='countLevel' placeholder="Nivel:" class='countLevel' readonly="readonly">
+    <header class="container-level item">         
+
+        <input type="text" id='countLevel' placeholder="Nivel:" class='countLevel item' readonly="readonly">
+
+    </header>
+
+    <div class="gameboard item">
+        <div id="celeste" class="color celeste left" data-color="celeste"></div>
+        <div id="violeta" class="color violeta right" data-color="violeta"></div>
+        <div id="naranja" class="color naranja left" data-color="naranja"></div>
+        <div id="verde" class="color verde right" data-color="verde"></div>
+        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Start!</button>
+    </div>
+
+    <section class="title item">
+        <div class="title-container">
+            <p>AlexDiceGeek</p>
+        </div>        
+    </section>
+
+    <footer class="owner-container item">
 
         <section>
 
@@ -27,24 +46,11 @@
 
         </section>
 
-    </header>
-
-    <div class="gameboard">
-        <div id="celeste" class="color celeste left" data-color="celeste"></div>
-        <div id="violeta" class="color violeta right" data-color="violeta"></div>
-        <div id="naranja" class="color naranja left" data-color="naranja"></div>
-        <div id="verde" class="color verde right" data-color="verde"></div>
-        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Start!</button>
-    </div>
-
-    <section class="title">
-        <div class="title-container">
-            <p>AlexDiceGeek</p>
-        </div>
         <div class="owner">
             <p>Alex Zepeda 2020</p>
         </div>
-    </section>
+
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="../assets/js/game.js"></script>

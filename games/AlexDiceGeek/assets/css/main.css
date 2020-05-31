@@ -3,21 +3,61 @@ body {
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
                 linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
                 linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-    display: flex;
-    align-items: center;
     height: 100vh;
     font-family: 'Piedra', cursive;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 400px 1fr 1fr;
   }
 
-  .container-level {
-    width: 300px;
-    height: 100px;  
-    position: absolute;
-    top: calc(50% - 350px);
-    left: calc(50% - 150px);
+  /* .item {
+    border: 1px solid black;
+  } */
+
+  .title {
+    grid-row: 1;
+    justify-self: center;
+    height: auto;
+    margin-top: 20px;
+    height: 70px;
+    color: white;
+    font-size: 60px;
+  }
+
+  .title-container p {
+    margin: 0;
+  }
+
+  .gameboard {
+    grid-row: 2;
+    height: 100vh;
+    width: 100vh;
+    border-radius: 10%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 60vh;
+    max-width: 60vh;
+  }
+
+
+  .container-level{
+    grid-row: 3;
+    justify-self: center;
     text-align: center;
     color: white;
     font-size: 60px;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+  }
+  
+  .owner-container {
+    grid-row: 4;
+    justify-self: center;
+    margin-top: 10px;
+    height: 70px;
+    text-align: center;
+    color: white;
   }
 
   .countLevel {
@@ -32,43 +72,8 @@ body {
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
                 linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
                 linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    
 }
-
-  .fb-like {
-    position: absolute;
-    top: 500px;
-  }
-
-  .owner {
-    width: 300px;
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 150px);
-    text-align: center;
-    color: white;
-    font-size: 12px;
-  }
-
-  .title {
-    width: 300px;
-    height: 100px;  
-    position: absolute;
-    top: calc(50% - 350px);
-    left: calc(50% - 160px);
-    text-align: center;
-    color: white;
-    font-size: 60px;
-  }
-
-  .gameboard {
-    height: 100vh;
-    width: 100vh;
-    border-radius: 10%;
-    overflow: hidden;
-    margin: 0 auto;
-    max-height: 60vh;
-    max-width: 60vh;
-  }
 
   .color {
     width: 50%;
@@ -125,7 +130,7 @@ body {
     color: white;
     font-size: 2.5rem;
     position: absolute;
-    top: calc(50% - 50px);
+    top: calc(50% - 90px);
     left: calc(50% - 150px);
     border: none;
     border-radius: 20px;
@@ -136,3 +141,6 @@ body {
   .hide {
     display: none;
   }  
+
+
+  
