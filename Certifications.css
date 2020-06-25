@@ -1067,7 +1067,7 @@ body
    padding: 0;
    display: inline-block;
    width: 290px;
-   height: 64px;
+   height: 88px;
    vertical-align: top;
 }
 #wb_adobe
@@ -1559,4 +1559,18 @@ body
 #wb_Facebook_2:hover i
 {
    color: #1E90FF;
+}
+#wb_Image1
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   display: inline-block;
+   width: 290px;
+   height: 64px;
+   vertical-align: top;
 }
