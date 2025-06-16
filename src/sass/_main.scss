@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&family=Pangolin&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oregano&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Oregano&display=swap");
+$lightBack: url("../Assets/LightBackground.png");
+$darkBack: url("../Assets/DarkBackground.png");
+
+body.light-mode {
+  background: $secundary;
+  color: $primary;
+}
+
+a {
+  @include link;
+}
+
+strong {
+  font-size: large;
+}
+
+button {
+  outline: none !important;
+  &:active {
+    transform: scale(0.9);
+  }
+  border-style: none;
+}
+
+a {
+  color: $secundary;
+}
+
+a:hover {
+  color: $secundary;
+}
+
+.btnDanger {
+  background: $danger;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px rgba($secundary, 0.5);
+  cursor: pointer;
+  color: white;
+  border-style: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  outline: none !important;
+  text-align: center;
+}
+.btnWarning {
+  background: $warning;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px rgba($secundary, 0.5);
+  cursor: pointer;
+  color: black;
+  border-style: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  outline: none !important;
+  text-align: center;
+}
+.btnGo {
+  background: $go;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px rgba($secundary, 0.5);
+  cursor: pointer;
+  color: white;
+  border-style: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  outline: none !important;
+  text-align: center;
+}
+
+.btnMain {
+  border-radius: 5px;
+  background: $primary;
+  box-shadow: 2px 2px 2px 0px rgba($secundary, 0.5);
+  cursor: pointer;
+  color: $secundary;
+  border-style: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  outline: none !important;
+  text-align: center;
+}
+
+.btnPrimary {
+  background: $primary;
+}
+
+.btnSecundary {
+  background: $secundary;
+}
+
+.btnVariation {
+  background: $variation;
+}
+
+.btnDark {
+  background: $primary;
+}
+
+.btnDark2 {
+  background: $primary;
+}
+
+.btnLight {
+  background: $secundary;
+}
+
+.btnLight2 {
+  background: $secundary;
+}

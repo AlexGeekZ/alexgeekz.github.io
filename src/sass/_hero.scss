@@ -1,0 +1,18 @@
+.hero {
+  border-bottom: solid 2px $variation;
+  border-top: solid 2px $variation;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(../assets/hero/hero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &--photo {
+    max-width: 300px;
+    max-height: 500px;
+  }
+  &--icons {
+    font-size: 32px;
+    color: white;
+  }
+}

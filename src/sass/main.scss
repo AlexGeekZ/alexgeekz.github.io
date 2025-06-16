@@ -1,0 +1,49 @@
+@import "./theme.scss";
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0 auto;
+  height: 100vh;
+  background: $primary;
+  color: $secondary;
+  font-size: larger;
+  // font-family: "Oregano", cursive;
+  font-family: "Finger Paint", cursive;
+  // font-family: $variationFont2, sans-serif;
+  // font-family: 'Baloo Tammudu', sans-serif;
+}
+
+.hero {
+  border-bottom: solid 2px $secondary;
+  border-top: solid 2px $secondary;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(../assets/hero/hero.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &--photo {
+    max-width: 300px;
+    max-height: 500px;
+  }
+  &--icons {
+    font-size: 32px;
+    color: white;
+  }
+}
+
+.heroDesign {
+  background-image: url(../assets/hero/BGHero.webp);
+  // background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &--img {
+    margin-top: 100px;
+  }
+  // &--title {
+
+  // }
+}

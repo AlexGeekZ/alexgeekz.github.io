@@ -1,0 +1,52 @@
+.btn-primary {
+    color: $secundary;
+    background-color: $variation;
+    border-color: $secundary;
+    outline: none !important;
+    width: 100%;
+    font-weight: 900;
+    font-size: large;
+    letter-spacing: 2px;
+  &:active {
+    transform: scale(0.9);
+  }
+  border-style: none;
+}
+
+.btn-primary:hover {
+    color: $secundary;
+    background-color: $variation;
+    border-color: $secundary;
+    outline: none !important;
+  &:active {
+    transform: scale(0.9);
+  }
+  border-style: none;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: $secundary;
+    background-color: $variation;
+    border-color: $secundary;
+    outline: none !important;
+  &:active {
+    transform: scale(0.9);
+  }
+  border-style: none;
+  box-shadow: none;
+}
+
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    color: $secundary;
+    background-color: $variation;
+    border-color: $secundary;
+    outline: none !important;
+  &:active {
+    transform: scale(0.9);
+  }
+  border-style: none;
+}
+
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}

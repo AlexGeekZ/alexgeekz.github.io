@@ -1,0 +1,20 @@
+.awards {
+  display: inline-block;
+  background: $variation;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid $secundary;
+  &--cert {
+    cursor: pointer;
+  }
+  &--data {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+    max-height: 100vh;
+    padding: 20px;
+  }
+  &--text {
+    white-space: initial; //por espacios en blanco en caso de solo utilizar <p> y no markdown
+    word-break: break-all; // por cualquier caracter
+    overflow-wrap: break-word;
+  }
+}

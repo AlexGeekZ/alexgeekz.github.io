@@ -1,0 +1,10 @@
+.heroDesign {
+  background-image: url(../assets/hero/BGHero.webp);
+  // background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &--img {
+    margin-top: 100px;
+  }
+}

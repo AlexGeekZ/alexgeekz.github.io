@@ -1,0 +1,35 @@
+$primary: #021626;
+$secundary: #08f1f3;
+$variation: #0f4948;
+$variation2: #109c92;
+$alpha: 0.2;
+$variationAlpha: rgba($primary, $alpha);
+$warning: #fbd46d;
+$danger: #ec0101;
+$go: #158467;
+$primaryFont: "Acme";
+$secundaryFont: "Pacifico", cursive;
+$variationFont: "Ubuntu", sans-serif;
+// $variationFont2: 'Pangolin', cursive;
+
+$linearPrimary: linear-gradient(to bottom, rgba($variation, 1) 0%, rgba($primary, 0.7) 100%);
+
+@mixin link {
+  text-decoration: none;
+  color: $secundary;
+  font-size: 20px;
+  font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+    color: $primary;
+    font-weight: 800;
+  }
+}
+
+@mixin btn {
+  background-color: $variation;
+  font-weight: 900;
+  font-size: 48px;
+  border-radius: 10px;
+  cursor: pointer;
+}

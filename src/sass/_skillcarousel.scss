@@ -1,0 +1,13 @@
+
+.skill {    
+    cursor: pointer;
+    &--img {
+        padding-top: 7px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    &--icons {
+      font-size: 32px;
+    //   color: white;
+    } 
+}

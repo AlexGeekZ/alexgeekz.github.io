@@ -1,0 +1,10 @@
+.footer {
+    border-top: solid 3px $variation;
+    border-bottom: solid 3px $variation;
+    background: $variationAlpha;
+    &--icons {
+        max-width: 60px;
+        max-height: 60px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,47 @@
+.navbar {
+    background: $primary;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    &--alex {
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+    }
+    &--themeDark {
+        background: $primary;
+        border-radius: 50px;        
+    }
+    &--themeLight {
+        background: $primary;
+        border-radius: 50px;
+    }
+    &--sun {
+        margin: 0px 4px;
+        padding-top: 5px;
+        color: $warning;
+    }
+    &--moon {
+        margin: 0px 4px;
+        padding-top: 5px;
+        color:blue;
+    }
+    &--photo {
+        border-radius: 50%;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    &--logout {
+        cursor: pointer;
+        font-size: large;
+    }
+    &--name {
+        font-size: 20px;
+    }
+    &--logo {
+        max-width: 50px;
+    }
+    &--logoBurger {
+        max-width: 100px;
+    }
+}

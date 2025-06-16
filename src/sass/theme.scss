@@ -1,0 +1,25 @@
+// overwrite theme variables
+
+// good-looking theme
+$primary: #021626;
+$secondary: #01e9eb;
+$dark: #08aced;
+$light: #08f1f3;
+$gray: #c4c4c4;
+$success: #66ab57;
+$info: #9ab6da;
+$warning: #e49b1f;
+$danger: #f44336;
+$white: white;
+$alpha: 0.2;
+$variationAlpha: rgba($primary, $alpha);
+$warning: #fbd46d;
+$danger: #ec0101;
+$go: #158467;
+$primaryFont: "Acme";
+$secundaryFont: "Pacifico", cursive;
+$variationFont: "Ubuntu", sans-serif;
+// $variationFont2: "Pangolin", cursive;
+
+// import bootstrap styles at the bottom!
+@import "~bootstrap/scss/bootstrap.scss";
