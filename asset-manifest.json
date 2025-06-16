@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bcdb4cab.css",
-    "main.js": "/static/js/main.59e47570.js",
+    "main.css": "/static/css/main.872834fa.css",
+    "main.js": "/static/js/main.722cd706.js",
     "static/media/Alex Geek Web.mp4": "/static/media/Alex Geek Web.795effe5ba5992e18d98.mp4",
     "static/media/min.png": "/static/media/min.1b317b4ffe87d386976a.png",
     "static/media/GitHub.png": "/static/media/GitHub.363cb5edea582a89c41f.png",
@@ -77,11 +77,11 @@
     "static/media/smartphone-1.png": "/static/media/smartphone-1.774383edbea700a3f098.png",
     "static/media/BGHero.webp": "/static/media/BGHero.f8af46c756f63b876f54.webp",
     "index.html": "/index.html",
-    "main.bcdb4cab.css.map": "/static/css/main.bcdb4cab.css.map",
-    "main.59e47570.js.map": "/static/js/main.59e47570.js.map"
+    "main.872834fa.css.map": "/static/css/main.872834fa.css.map",
+    "main.722cd706.js.map": "/static/js/main.722cd706.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcdb4cab.css",
-    "static/js/main.59e47570.js"
+    "static/css/main.872834fa.css",
+    "static/js/main.722cd706.js"
   ]
 }
