@@ -49,11 +49,11 @@ export const NavBar = () => {
             <strong className="mx-2">Portfolio</strong>
           </Link>
         </Col>
-        <Col lg={1} className="text-end">
+        {/* <Col lg={1} className="text-end">
           <Link to={routes.gallery}>
             <strong className="mx-2">Gallery</strong>
           </Link>
-        </Col>
+        </Col> */}
         {active && (
           <Col lg={1} className="text-end">
             <Link>

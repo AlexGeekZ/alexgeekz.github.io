@@ -5,11 +5,11 @@ export const Home = () => {
   return (
     <Fragment>
       <Hero />
-      <AboutMe />
+      {/* <AboutMe /> */}
       <SkillCarousel />
-      <Video />
+      {/* <Video /> */}
       <AwardsProgress />
-      <YouTube />
+      {/* <YouTube /> */}
     </Fragment>
   );
 };

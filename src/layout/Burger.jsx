@@ -172,7 +172,7 @@ const Burger = () => {
               </Link>
             </Col>
           </Row>
-          <Row className="align-items-center mb-2">
+          {/* <Row className="align-items-center mb-2">
             <Col className="col-xs-1-12 col-lg-1 burgerMenu--nav">
               <Link to={routes.gallery}>
                 <span
@@ -191,7 +191,7 @@ const Burger = () => {
                 </span>
               </Link>
             </Col>
-          </Row>
+          </Row> */}
           {!active ? (
             <Row className="align-items-center mb-2">
               <Col className="col-xs-1-12 col-lg-1 burgerMenu--nav">
