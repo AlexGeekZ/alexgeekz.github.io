@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AlexGeekZ/alexgeekz.github.io/static/css/main.a534ce97.css",
-    "main.js": "/AlexGeekZ/alexgeekz.github.io/static/js/main.9383c814.js",
+    "main.js": "/AlexGeekZ/alexgeekz.github.io/static/js/main.386d2e64.js",
     "static/media/Alex Geek Web.mp4": "/AlexGeekZ/alexgeekz.github.io/static/media/Alex Geek Web.795effe5ba5992e18d98.mp4",
     "static/media/min.png": "/AlexGeekZ/alexgeekz.github.io/static/media/min.1b317b4ffe87d386976a.png",
     "static/media/GitHub.png": "/AlexGeekZ/alexgeekz.github.io/static/media/GitHub.363cb5edea582a89c41f.png",
@@ -78,10 +78,10 @@
     "static/media/BGHero.webp": "/AlexGeekZ/alexgeekz.github.io/static/media/BGHero.f8af46c756f63b876f54.webp",
     "index.html": "/AlexGeekZ/alexgeekz.github.io/index.html",
     "main.a534ce97.css.map": "/AlexGeekZ/alexgeekz.github.io/static/css/main.a534ce97.css.map",
-    "main.9383c814.js.map": "/AlexGeekZ/alexgeekz.github.io/static/js/main.9383c814.js.map"
+    "main.386d2e64.js.map": "/AlexGeekZ/alexgeekz.github.io/static/js/main.386d2e64.js.map"
   },
   "entrypoints": [
     "static/css/main.a534ce97.css",
-    "static/js/main.9383c814.js"
+    "static/js/main.386d2e64.js"
   ]
 }
